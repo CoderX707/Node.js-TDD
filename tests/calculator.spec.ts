@@ -11,3 +11,7 @@ test('Convert a number in string format into an actual number',()=>{
 test('Return the sum of numbers in a comma-separated string',()=>{
     expect(add('1,2,5')).toBe(8)
 })
+
+test('Handles newlines and get sum',()=>{
+    expect(add('1\n2,3\n4')).toBe(10)
+})
