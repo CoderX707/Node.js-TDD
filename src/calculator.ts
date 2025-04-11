@@ -8,5 +8,9 @@ export const add = (numbers: string): number => {
         numbers = rest
     }
     const nums = numbers.split(delimiter).map(Number)
+    const negatives = nums.filter(n => n < 0);
+    if (negatives.length) {
+        throw new Error(`negatives not allowed ${negatives.join(",")}`)
+    }
     return nums.reduce((prev, current) => (prev + current), 0)
 }

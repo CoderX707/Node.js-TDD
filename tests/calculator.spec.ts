@@ -20,3 +20,7 @@ test('Supports custom delimiter', () => {
     expect(add('//;\n3;5\n')).toBe(8);
 });
   
+
+test('Throw error for negative numbers', () => {
+    expect(()=>add('10,-10')).toThrowErrorMatchingSnapshot("negatives not allowed  -10")
+})
