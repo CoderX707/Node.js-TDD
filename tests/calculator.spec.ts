@@ -15,3 +15,8 @@ test('Return the sum of numbers in a comma-separated string',()=>{
 test('Handles newlines and get sum',()=>{
     expect(add('1\n2,3\n4')).toBe(10)
 })
+
+test('Supports custom delimiter', () => {
+    expect(add('//;\n3;5\n')).toBe(8);
+});
+  
