@@ -6,8 +6,8 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ashish Mule",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/jest": "^29.5.14",
